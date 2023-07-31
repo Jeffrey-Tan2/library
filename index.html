@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+    <link rel="icon" type="image/x-icon" href="book-open-variant.svg">
+</head>
+<body>
+    <script src="./library.js" defer></script>
+    <div class="header">
+        <h1>My Library</h1>
+    </div>
+    <div class="add-book-btn"><button id="add-book">+ Add Book</button></div>
+    <div id="add-form" class="modal">
+        <div class="book-form | modal-content">
+            <span class="close">&times;</span>
+            <h2>Add a book</h2>
+            <form id="new-book-form">
+                <p>Title</p>
+                <input id="new-title" type="text" placeholder="Title" maxlength="100" required />
+                <p>Author</p>
+                <input id="new-author" type="text" placeholder="Author" maxlength="100" required />
+                <p>Pages</p>
+                <input id="new-pages" type="number" placeholder="Pages" maxlength="10000" required />
+                <p>Have you read it?</p>
+                <input id="read-status" type="checkbox"/>
+                <button id="new-book" type="submit">Add book</button>
+            </form>
+        </div>
+    </div>
+    <div id="library"></div>
+</body>
+</html>
